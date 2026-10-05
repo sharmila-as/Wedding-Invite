@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1a080b">
+<meta name="color-scheme" content="light">
+<title>Sowmiya &amp; Moorthi — Wedding Invitation</title>
+<meta name="description" content="With the blessings of our families, you are warmly invited. Open to discover our special day.">
+<meta property="og:title" content="Sowmiya & Moorthi — Wedding Invitation">
+<meta property="og:description" content="அன்புடன் அழைக்கிறோம் — open to discover our special day.">
+<meta property="og:type" content="website">
+<!-- After hosting, set an absolute image URL so WhatsApp shows a preview, e.g.
+<meta property="og:image" content="https://your-domain.com/assets/images/couple-1.jpg"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima:wght@400;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="locked">
+
+<!-- Shared gradients for every inline SVG motif -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="g-brass" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#6b4718"/><stop offset=".3" stop-color="#c9a054"/><stop offset=".52" stop-color="#f4dc9c"/><stop offset=".72" stop-color="#b8893b"/><stop offset="1" stop-color="#5e3e14"/>
+    </linearGradient>
+    <radialGradient id="g-flame" cx=".5" cy=".82" r=".75">
+      <stop offset="0" stop-color="#fffbea"/><stop offset=".35" stop-color="#ffe38a"/><stop offset=".72" stop-color="#f59e2b"/><stop offset="1" stop-color="#d9480f"/>
+    </radialGradient>
+    <radialGradient id="g-glow"><stop offset="0" stop-color="#ffd678" stop-opacity=".6"/><stop offset="1" stop-color="#ffd678" stop-opacity="0"/></radialGradient>
+    <linearGradient id="g-leaf" x1="0" x2="1"><stop offset="0" stop-color="#2f7a3e"/><stop offset="1" stop-color="#1b4f2a"/></linearGradient>
+  </defs>
+</svg>
+
+<div id="live" class="sr-only" aria-live="polite"></div>
+
+<!-- =============================== OPENING =============================== -->
+<div id="intro" class="intro" role="region" aria-label="Wedding invitation opening">
+  <div class="intro__glow" aria-hidden="true"></div>
+  <div class="intro__temple-photo" aria-hidden="true">
+    <img src="assets/images/Opening.png" alt="">
+  </div>
+
+  <div class="intro__temple-overlay" aria-hidden="true"></div>
+  <div class="intro__kolam" data-art="kolam"></div>
+  <canvas class="intro__dust" aria-hidden="true"></canvas>
+  <div class="intro__petals" aria-hidden="true"></div>
+
+  <div class="intro__stage">
+    <p class="intro__ta" lang="ta">அன்புடன் அழைக்கிறோம்</p>
+    <p class="intro__bless">With the blessings of our families</p>
+    <h1 class="intro__names">
+      <span class="intro__bride shimmer" data-bind="couple.bride">Sowmiya</span>
+      <span class="intro__amp" aria-hidden="true">&amp;</span>
+      <span class="intro__groom shimmer" data-bind="couple.groom">Moorthi</span>
+    </h1>
+
+    <div class="intro__photo-wrap">
+      <div class="intro__deepam intro__deepam--l" data-art="deepam"></div>
+      <figure class="intro__photo">
+        <span class="intro__arch-top" aria-hidden="true"></span>
+        <span class="intro__photo-mask"><img id="introPhoto" alt="" decoding="async" fetchpriority="high"></span>
+      </figure>
+      <div class="intro__deepam intro__deepam--r" data-art="deepam"></div>
+    </div>
+
+    <button class="open-btn" type="button">
+      <span class="open-btn__bell" data-art="bell"></span>
+      <span class="open-btn__text">Open Invitation</span>
+    </button>
+  </div>
+  <div class="intro__wipe" aria-hidden="true"></div>
+</div>
+
+<!-- =============================== MAIN =============================== -->
+<main id="main" inert aria-hidden="true">
+
+  <!-- <nav class="lux-nav" aria-label="Wedding sections">
+    <a href="#home" class="lux-nav__brand">T <span>&amp;</span> S</a>
+    <div class="lux-nav__links">
+      <a href="#home">Home</a><a href="#reveal">Date</a><a href="#countdown">Countdown</a><a href="#events">Events</a><a href="#story">Story</a><a href="#gallery">Gallery</a><a href="#venue">Venue</a>
+    </div>
+  </nav> -->
+
+
+  <!-- HERO -->
+  <section id="home" class="hero" aria-labelledby="heroTitle">
+    <div class="hero__thoranam" data-thoranam></div>
+    <div class="hero__kolam" data-art="kolam"></div>
+    <div class="hero__frame">
+      <span class="hero__corner hero__corner--tl" data-art="corner"></span><span class="hero__corner hero__corner--tr" data-art="corner"></span>
+      <span class="hero__corner hero__corner--bl" data-art="corner"></span><span class="hero__corner hero__corner--br" data-art="corner"></span>
+      <p class="hero__together">Together with their families</p>
+      <h2 id="heroTitle" class="hero__names" tabindex="-1">
+        <span class="hero__name" data-bind="couple.bride">Sowmiya</span>
+
+        <span class="hero__amp" aria-label="weds">
+          <span data-art="jasmine"></span>
+          <span class="hero__amp-ch" aria-hidden="true">WEDS</span>
+          <span data-art="jasmine"></span>
+        </span>
+
+        <span class="hero__name" data-bind="couple.groom">Moorthi</span>
+      </h2>
+      <div class="hero__div" data-art="divider"></div>
+      <p class="hero__quote">“Two hearts, one beautiful beginning.”</p>
+      <p class="hero__ta" lang="ta">“இரு மனங்கள் இணையும் இனிய தருணம்”</p>
+    </div>
+    <p class="hero__cue" aria-hidden="true"><span>Scroll</span><i></i></p>
+  </section>
+
+  <!-- SCRATCH CARD -->
+  <section id="reveal" class="reveal sec" aria-labelledby="revealTitle">
+    <div class="reveal__bg" data-art="kolam"></div>
+    <h2 id="revealTitle" class="reveal__title" data-reveal>A Special Day Awaits…</h2>
+    <p class="reveal__sub" data-reveal>Scratch to reveal our wedding date</p>
+
+    <div id="scratch" class="scratch" data-reveal>
+      <div class="scratch__card">
+        <span class="scratch__corner scratch__corner--tl" data-art="corner"></span><span class="scratch__corner scratch__corner--tr" data-art="corner"></span>
+        <span class="scratch__corner scratch__corner--bl" data-art="corner"></span><span class="scratch__corner scratch__corner--br" data-art="corner"></span>
+        <div class="scratch__date" aria-hidden="true">
+          <span class="sd sd--day" data-bind="wedding.day">25</span>
+          <span class="sd sd--month" data-bind="wedding.month">October</span>
+          <span class="sd sd--year" data-bind="wedding.year">2026</span>
+          <span class="sd sd--label">Our wedding day <svg class="heart" viewBox="0 0 24 22" aria-hidden="true"><path d="M12 21 2.6 11.7A5.6 5.6 0 0 1 12 3.9a5.6 5.6 0 0 1 9.4 7.8Z" fill="currentColor"/></svg></span>
+        </div>
+      </div>
+      <canvas class="scratch__canvas" role="img" aria-label="Gold scratch card. Scratch with your finger or mouse to reveal the wedding date."></canvas>
+      <div class="scratch__hint" aria-hidden="true"><span class="scratch__finger"></span></div>
+    </div>
+    <button id="scratchAlt" class="scratch__alt" type="button">Reveal the date without scratching</button>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section id="countdown" class="cd sec" aria-labelledby="cdTitle">
+    <div class="cd__locked">
+      <div class="cd__lock-lamp" data-art="deepam"></div>
+      <h2 class="cd__lock-title">The countdown is waiting</h2>
+      <p>It begins the moment you reveal our date.</p>
+      <button class="btn btn--ghost" type="button" data-goto-scratch>Reveal the date</button>
+    </div>
+    <div class="cd__live" aria-hidden="true">
+      <h2 id="cdTitle" class="cd__title">Counting down to our big day</h2>
+      <div class="cd__grid" role="timer" aria-live="off">
+        <div class="cd__unit" data-unit="days"><span class="cd__lbl">Days</span><span class="cd__num">00</span></div>
+        <div class="cd__unit" data-unit="hours"><span class="cd__lbl">Hours</span><span class="cd__num">00</span></div>
+        <div class="cd__unit" data-unit="minutes"><span class="cd__lbl">Minutes</span><span class="cd__num">00</span></div>
+        <div class="cd__unit" data-unit="seconds"><span class="cd__lbl">Seconds</span><span class="cd__num">00</span></div>
+      </div>
+      <p class="cd__when"><span data-bind="wedding.time">10:30 AM</span> IST, the auspicious muhurtham</p>
+      <p class="cd__arrived">The day has arrived <svg class="heart" viewBox="0 0 24 22" aria-hidden="true"><path d="M12 21 2.6 11.7A5.6 5.6 0 0 1 12 3.9a5.6 5.6 0 0 1 9.4 7.8Z" fill="currentColor"/></svg></p>
+    </div>
+  </section>
+
+  <!-- EVENT -->
+  <section id="events" class="events sec" aria-labelledby="evTitle">
+    <h2 id="evTitle" class="sec__title" data-reveal>The Wedding</h2>
+    <p class="sec__ta" lang="ta" data-reveal>திருமண நிகழ்வு</p>
+    <div id="eventList" class="events__list"></div>
+  </section>
+
+  <!-- STORY -->
+  <section id="story" class="story sec" aria-labelledby="storyTitle">
+    <h2 id="storyTitle" class="sec__title" data-reveal>Our Story</h2>
+    <p class="sec__ta" lang="ta" data-reveal>எங்கள் கதை</p>
+    <ol id="storyList" class="story__list"></ol>
+  </section>
+
+  <!-- FAMILY -->
+  <section class="family sec" aria-labelledby="famTitle">
+    <div class="family__kolam draw" data-art="kolam" data-reveal></div>
+    <h2 id="famTitle" class="family__title" data-reveal>With the blessings of our families</h2>
+    <div class="family__row" data-reveal>
+      <div class="family__side">
+        <!-- <p class="family__ta" lang="ta" data-bind="families.bride.tamil"></p> -->
+        <h3 class="family__label" data-bind="families.bride.label"></h3>
+        <p class="family__names" data-bind="families.bride.parents"></p>
+      </div>
+      <div class="family__lamp" data-art="lamp"></div>
+      <div class="family__side">
+        <!-- <p class="family__ta" lang="ta" data-bind="families.groom.tamil"></p> -->
+        <h3 class="family__label" data-bind="families.groom.label"></h3>
+        <p class="family__names" data-bind="families.groom.parents"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="gal sec" aria-labelledby="galTitle">
+    <h2 id="galTitle" class="sec__title sec__title--light" data-reveal>Moments</h2>
+    <p class="sec__ta sec__ta--light" lang="ta" data-reveal>நினைவுகள்</p>
+    <div class="gal__banner" data-reveal></div>
+    <div class="gal__viewer" data-reveal>
+      <ul class="gal__track" aria-label="Photo gallery, swipe sideways"></ul>
+      <div class="gal__nav">
+        <button class="gal__prev" type="button" aria-label="Previous photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+        <div class="gal__dots" aria-hidden="true"></div>
+        <span class="gal__count" aria-live="polite"></span>
+        <button class="gal__next" type="button" aria-label="Next photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+      </div>
+      <p class="gal__hint">Swipe to see more, tap a photo to view it full screen</p>
+    </div>
+  </section>
+
+  <!-- VENUE -->
+  <section id="venue" class="venue sec" aria-labelledby="venueTitle">
+    <div class="venue__temple draw" data-art="gopuram" data-art-class="gopuram venue__gopuram" data-reveal></div>
+    <h2 id="venueTitle" class="venue__title" data-reveal>The Wedding Venue</h2>
+    <p class="sec__ta sec__ta--light" lang="ta" data-reveal>திருமண மண்டபம்</p>
+    <div class="venue__card" data-reveal>
+      <svg class="venue__pin" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z" fill="currentColor"/></svg>
+      <p class="venue__name" data-bind="venue.name">VG MAHAL</p>
+      <p class="venue__addr" data-bind="venue.address"></p>
+      <a class="btn btn--gold" data-maps target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 9 19-9-4-9 4 9-19Z" fill="currentColor"/></svg>
+        Get directions
+      </a>
+    </div>
+  </section>
+
+  <!-- FINALE -->
+  <section id="finale" class="finale" aria-labelledby="finTitle">
+    <div class="finale__dark">
+      <canvas class="finale__dust" aria-hidden="true"></canvas>
+      <div class="finale__petals" aria-hidden="true"></div>
+      <div class="finale__lamp" data-art="lamp" data-reveal></div>
+      <p id="finTitle" class="finale__quote" data-reveal>“Your presence will make our celebration even more special.”</p>
+      <p class="finale__ta" lang="ta" data-reveal>“உங்கள் வருகையே எங்கள் மகிழ்ச்சி.”</p>
+    </div>
+    <div class="finale__light">
+      <div class="finale__div" data-art="divider"></div>
+      <p class="finale__names" data-reveal><span data-bind="couple.bride">Sowmiya</span> <span class="finale__amp">&amp;</span> <span data-bind="couple.groom">Moorthi</span></p>
+      <p class="finale__date" data-reveal><span class="date-lock" data-date-lock>Our date is hidden on the scratch card</span></p>
+      <button class="finale__goto btn btn--outline" type="button" data-goto-scratch>Reveal our date</button>
+    </div>
+  </section>
+</main>
+
+<!-- Music toggle (hidden until an audio file is available) -->
+<button id="musicBtn" class="music" type="button" hidden aria-pressed="false" aria-label="Play background music">
+  <span class="music__icon" aria-hidden="true">
+    <svg class="music__note" viewBox="0 0 24 24"><path d="M9 18.5a2.5 2.5 0 1 1-2-2.45V5l11-2v12.5a2.5 2.5 0 1 1-2-2.45V6.2L9 7.6Z" fill="currentColor"/></svg>
+    <span class="music__bars"><i></i><i></i><i></i></span>
+  </span>
+  <span class="music__state sr-only">Music off</span>
+</button>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lb" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+  <button class="lb__close" type="button" aria-label="Close photo viewer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8"/></svg></button>
+  <div class="lb__stage"><img class="lb__img" alt="" decoding="async"></div>
+  <div class="lb__bar">
+    <button class="lb__prev" type="button" aria-label="Previous photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+    <p class="lb__cap"></p>
+    <button class="lb__next" type="button" aria-label="Next photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+  </div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/scratch-card.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
